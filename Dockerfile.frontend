@@ -1,0 +1,4 @@
+FROM nginx:stable-perl
+WORKDIR /app
+COPY . .
+COPY ./nginx.conf /etc/nginx/nginx.conf

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="center">
+        <h1>Account Updater</h1>
+        <div class="grid">
+            <div class="left-col cell">
+                <h3>Create Account</h3>
+                <form>
+                    <input id="create-name" type="text" placeholder="name" />
+                    <input id="create-username" type="text" placeholder="username" />
+                    <input id="create-email" type="text" placeholder="email" />
+                    <button class="btn" type="button" onclick="createAccount(
+                        document.querySelector('#create-name').value,
+                        document.querySelector('#create-username').value,
+                        document.querySelector('#create-email').value
+                    )">Submit</button>
+                </form>
+            </div>
+            <div class="right-col cell">
+                <h3>Output</h3>
+                <div id="output-root"></div>
+            </div>
+            <div class="left-col cell">
+                <h3>Find Account</h3>
+                <form>
+                    <input id="get-account" type="text" placeholder="username" />
+                    <button class="btn" type="button" onclick="getAccount(document.querySelector('#get-account').value)">Submit</button>
+                </form>
+            </div>
+            <div class="right-col cell">
+                <h3>Delete Account</h3>
+                <form>
+                    <input id="delete-account" type="text" placeholder="username" />
+                    <button class="btn" type="button" onclick="deleteAccount(document.querySelector('#delete-account').value)">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
