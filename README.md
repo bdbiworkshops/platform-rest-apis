@@ -5,7 +5,7 @@ This repository contains source code for a BDBI @ Georgia Tech workshop that cov
 Installation
 -
 1. Make sure you have [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running
-2. Clone the repository with `git clone https://github.com/nathanaeng/bdbi-rest-api`
+2. Clone the repository with `git clone https://github.com/bdbiworkshops/platform-rest-apis`
 3. Build the application with `docker-compose up --build`
 4. Navigate to http://localhost:8080 to view the website
 
